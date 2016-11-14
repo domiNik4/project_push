@@ -29,7 +29,7 @@ int* Generator(int n)
 	int *p_arr;
 	p_arr=(int*)malloc(sizeof(int)*n); //generating the array of n ints
 	for (i=0;i<n;i++){
-		*(p_arr+i)=rand()%99+1;
+		*(p_arr+i)=rand()%999+1
 		for(j=0;j<n;j++){
 			if(*(p_arr+i)==*(p_arr+j)){
 				*(p_arr+j)=rand()%99+1;
